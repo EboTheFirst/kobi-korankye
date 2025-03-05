@@ -11,13 +11,12 @@ export default function Home() {
   const router = useRouter()
 
   return (
-    <div className="relative">
+    <div className="relative max-w-[70rem] mx-auto">
       <div className="relative bg-gradient-to-b from-[#F2F2EF] to-[#E8E8E5] rounded-b-[6rem] px-[1.5rem] md:px-[5rem] py-[2.5rem] flex flex-col items-center">
         <div className="flex max-md:flex-col max-md:gap-[1.5rem] md:justify-between w-full">
           <div className="md:hidden flex gap-[0.5rem] items-center">
             <div className="text-sm text-[0.9rem] text-gray-700">Athens, GA | kobikorankye@uga.edu |+1 3309072708 </div>
           </div>
-
           <div className="flex gap-[1rem] items-center">
             {/* <div className="text-sm text-[0.9rem] text-gray-700 italic">kobikorankye@gmail.com</div> */}
             {/* <div className="rounded-full px-[1.2rem] py-[0.5rem] text-gray-700 text-[0.8rem] bg-white shadow">
@@ -42,17 +41,17 @@ export default function Home() {
             width={200}
             height={200}
             alt="photo"
-            src="/KobinaKorankyeBW.png"
+            src="/KobinaKorankyeToonBW.png"
             className="md:hidden rounded-full mx-auto object-cover"
           />
           <div className="flex-col text-center md:text-right">
             <div className="font-black text-gray-700 md:leading-[5rem] md:text-[5rem] leading-[4rem] text-[4rem]">
-              <span className="text-rose-800">Kobi</span>na
+              <span className="text-rose-900">Kobi</span>na
               <br />
               <span className="">Korankye</span>
             </div>
             <div className="text-[0.9rem] text-gray-900 italic mt-[1rem]">
-              "Philosophy PhD Candidate, University of Georgia"
+              "Philosophy PhD Student, University of Georgia"
             </div>
           </div>
           <Image
