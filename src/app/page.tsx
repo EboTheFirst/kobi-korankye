@@ -68,11 +68,13 @@ export default function Home() {
         <div className="flex gap-[2rem]">
           {
             navs.map((nav, index) => (
-              <div key={index} onClick={() => { setSelectedSectionNav(nav) }} className={`text-[2rem] cursor-pointer pb-[0.25rem] text-zinc-600 box-border transition-all duration-200 ${nav == selectedSectionNav ? "border-b-2 border-rose-800" : "font-thin"}`}>{nav}</div>
+              <div key={index} onClick={() => { setSelectedSectionNav(nav) }} className={`text-[1.5rem] cursor-pointer pb-[0.25rem] text-zinc-600 box-border transition-all duration-200 ${nav == selectedSectionNav ? "border-b-2 border-rose-800 font-bold" : "font-normal"}`}>
+                {nav}
+              </div>
             ))
           }
         </div>
-        <div className="border-t border-l border-gray-300 rounded-tl-xl px-[2rem] p-[1rem] pb-[3rem]">
+        <div className="border-t border-l border-gray-300 px-[2rem] p-[1rem] pb-[3rem]">
           {
             selectedSectionNav == navs[0] &&
             <>
