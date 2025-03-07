@@ -64,8 +64,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col mt-[3rem] px-[1.5rem] md:px-[5rem]">
-        <div className="flex gap-[2rem] mx-5">
+      <div className="flex flex-col mt-[3rem]">
+        <div className="flex gap-[2rem]">
           {
             navs.map((nav, index) => (
               <div key={index} onClick={() => { setSelectedSectionNav(nav) }} className={`text-[2rem] cursor-pointer pb-[0.25rem] text-zinc-600 box-border transition-all duration-200 ${nav == selectedSectionNav ? "border-b-2 border-rose-800" : "font-thin"}`}>{nav}</div>
@@ -76,17 +76,72 @@ export default function Home() {
           {
             selectedSectionNav == navs[0] &&
             <>
-              <div className="font-bold text-teal-800 text-[1.5rem] mt-[2rem]">
-                Primary Interests
+              <div className="font-black text-rose-800 text-[1.5rem] mt-[2rem]">
+                Interests
               </div>
-              <div className="font-thin text-[1.3rem] mt-[0.5rem] ml-[1rem]">
+              <div className="font-bold text-teal-800 text-[1.25rem] mt-[2rem]">
+                Primary
+              </div>
+              <div className="font-thin text-[1.2rem] mt-[0.5rem] ml-[1rem]">
                 Epistemology, Artificial Intelligence, Philosophy of Language
               </div>
-              <div className="font-bold text-teal-500 text-[1.5rem] mt-[3rem]">
-                Secondary Interests
+              <div className="font-bold text-teal-500 text-[1.25rem] mt-[1rem]">
+                Secondary
               </div>
-              <div className="font-thin text-[1.3rem] mt-[0.5rem] ml-[1rem]">
+              <div className="font-thin text-[1.2rem] mt-[0.5rem] ml-[1rem]">
                 Applied Ethics, African Philosophy, Logic
+              </div>
+
+              {/* <div className="w-full h-[0.5px] mt-[1rem] bg-gray-300" /> */}
+
+              <div className="font-black text-rose-800 text-[1.5rem] mt-[4rem]">
+                Education
+              </div>
+              <div className="flex gap-[1rem] mt-[2rem] items-start">
+                <div className="flex-1 flex flex-col gap-[0.25rem]">
+                  <div className="text-rose-600 medium font-bold text-[1.16rem]">University of Georgia</div>
+                  <div className="italic text-gray-700 text-[1rem]">PhD, Philosophy</div>
+                  <div className="italic text-gray-700 text-[1rem]">Current GPA: 4.0</div>
+                </div>
+                <div className="flex flex-col gap-[0.25rem]">
+                  <div className="font-bold">
+                    Athens, Georgia
+                  </div>
+                  <div>
+                    Graduation Date: May 2028
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-[1rem] mt-[2rem] items-start">
+                <div className="flex-1 flex flex-col gap-[0.25rem]">
+                  <div className="text-sky-600 medium font-bold text-[1.16rem]">Kent State University</div>
+                  <div className="italic text-gray-700 text-[1rem]">MA, Philosophy</div>
+                  <div className="italic text-gray-700 text-[1rem]">Thesis: Misgivings About the Given: Externalist Elements in BonJour’s Internalist Foundationalism</div>
+                  <div className="italic text-gray-700 text-[1rem]">Final GPA: 3.95</div>
+                </div>
+                <div className="flex flex-col gap-[0.25rem]">
+                  <div className="font-bold">
+                    Kent, Ohio
+                  </div>
+                  <div>
+                    Graduation Date: Aug 2023
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-[1rem] mt-[2rem] items-start">
+                <div className="flex-1 flex flex-col gap-[0.25rem]">
+                  <div className="text-blue-900 medium font-bold text-[1.16rem]">University of Ghana</div>
+                  <div className="italic text-gray-700 text-[1rem]">BA, Philosophy and Political Science</div>
+                  <div className="italic text-gray-700 text-[1rem]">Final GPA: 3.58; USA equivalent: 3.64</div>
+                </div>
+                <div className="flex flex-col gap-[0.25rem]">
+                  <div className="font-bold">
+                    Accra, Ghana
+                  </div>
+                  <div>
+                    Graduation Date: May 2018
+                  </div>
+                </div>
               </div>
             </>
           }
