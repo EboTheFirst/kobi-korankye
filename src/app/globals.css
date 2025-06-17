@@ -224,16 +224,50 @@ a:focus-visible {
   text-rendering: optimizeLegibility;
 }
 
-/* Responsive animations */
+/* Responsive animations and improvements */
 @media (max-width: 768px) {
   .animate-slide-in-bottom,
   .animate-slide-in-left,
   .animate-slide-in-right {
     animation-duration: 0.6s;
   }
-  
+
   .animate-float {
     animation-duration: 4s;
+  }
+
+  /* Reduce transform effects on mobile for better performance */
+  .magnetic:hover {
+    transform: scale(1.02);
+  }
+
+  /* Improve touch targets */
+  button, a {
+    min-height: 44px;
+  }
+
+  /* Better text wrapping */
+  .break-all {
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .glass-modern,
+  .glass-dark-modern {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* Reduce padding on very small screens */
+  .p-6 {
+    padding: 1rem;
+  }
+
+  .p-8 {
+    padding: 1.5rem;
   }
 }
 
